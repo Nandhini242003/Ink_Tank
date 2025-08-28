@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+@media (max-width: 768px) {
+  .head-ful {
+    display: block;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    max-height: 80vh;
+    overflow-y: auto;
+    border-top: 1px solid #ddd;
+    color: #1e2c4f;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu .nav-item {
+    width: 100%;
+    text-align: left;
+    padding: 12px 20px;
+  }
+
+  .nav-menu .nav-item:hover {
+    color: #ddaca5;
+    background-color: #fff;
+  }
+
+  .dropdown-toggle {
+    font-weight: 600;
+  }
+
+  .dropdown-menu {
+    position: relative;
+    border: none;
+    width: 100%;
+  }
+
+  .dropdown-menu .insideList,
+  .dropdown-item {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #1e2c4f;
+  }
+
+  .mobile-toggle {
+    display: block;
+    margin-left: auto;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .mobile-toggle img {
+    width: 28px;
+  }
+
+  .top-contact {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  .logo {
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+
+  .top-contact img {
+    height: 20px;
+  }
+
+  .phone-number {
+    font-size: 15px;
+  }
+
+
+   .slider {
+    height: 300px;
+  }
+
+  .banner-text {
+    padding: 20px;
+  }
+
+  .banner-text h1 {
+    font-size: 1.5rem;
+  }
+  .expertise-icons ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-left: 50px;
+  }
+
+  .service-list,
+  .work-list {
+    list-style: none;
+    display: block;
+    padding: 10px 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .work-list {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 805px) {
+  .nav-menu {
+    gap: 0 !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 965px) {
+  .expertise-icons ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .service-list,
+  .work-list {
+    display: block;
+  }
+  .banner-text {
+    padding: 0px;
+
+  }
+}
+
+@media (max-width: 585px) {
+  .expertise-icons ul {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+   .banner-text {
+   padding: 10px;
+        width: 50%;
+
+  }
+}

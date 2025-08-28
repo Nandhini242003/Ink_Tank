@@ -1,0 +1,47 @@
+  .container {
+    width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  
+  .container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .container form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .container form input[type="text"],
+  .container form input[type="email"],
+  .container form input[type="tel"],
+  .container form textarea {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .container form textarea {
+    height: 100px;
+  }
+  
+  .container form input[type="submit"] {
+    background-color:#f68c1f;
+    color: white;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 30%;
+    cursor: pointer;
+  }
+
+   
