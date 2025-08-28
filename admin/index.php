@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Call the login function from session.php
     if (login($username, $password)) {
         // If login is successful, redirect to the dashboard
-        header("Location: login.php");
+        header("Location: dashboard.php");
         exit();
     } else {
         $error_msg = "Invalid username or password. Please try again.";
@@ -86,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <?php if (!empty($error_msg)): ?>
             <p class="error-message"><?php echo $error_msg; ?></p>
         <?php endif; ?>
-        <form action="login.php" method="post">
+        <form action="dashboard.php" method="post">
             <input type="text" name="username" placeholder="Username" required>
             <input type="password" name="password" placeholder="Password" required>
             <input type="submit" value="Login">
